@@ -1,0 +1,20 @@
+ * {
+  background: red;
+}
+
+ .clicked p {
+   background:blue;
+ }
+
+ .test {
+   background: green;
+ }
+
+
+ :host(.clicked) * {
+   background: blue;
+ }
+
+ :host(.clicked) p {
+   background: blue;
+ }
