@@ -1,20 +1,4 @@
- * {
-  background: red;
+.clicked {
+  border: 2px solid black;
 }
 
- .clicked p {
-   background:blue;
- }
-
- .test {
-   background: green;
- }
-
-
- :host(.clicked) * {
-   background: blue;
- }
-
- :host(.clicked) p {
-   background: blue;
- }

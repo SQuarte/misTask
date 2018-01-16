@@ -1,0 +1,12 @@
+<div>
+  <div class="color-picker">
+    <span>pick color for component:</span>
+    <button *ngFor="let colorButton of colorButtons"
+            [ngStyle]="{'background':colorButton.color}"
+            (click)="setColor(colorButton.color)">{{colorButton.name}}</button>
+  </div>
+  <div #surface class = "items-surface">
+    <ng-container class="mis-items-container" #container></ng-container>
+  </div>
+</div>
+
