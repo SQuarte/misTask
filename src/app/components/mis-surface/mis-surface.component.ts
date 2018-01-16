@@ -64,8 +64,6 @@ export class MisSurfaceComponent implements OnChanges {
   }
 
   private createComponent(domNode: IDomNode) {
-    let tmpls  = this.templateFactory.createTemplate(domNode);
-    console.log(tmpls);
     let metadata = {
       selector: `mis-node-item`,
       template: this.templateFactory.createTemplate(domNode),

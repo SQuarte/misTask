@@ -8,7 +8,6 @@ export class TemplateCreatorService {
 
   public createTemplate(domNode: IDomNode) :string{
     let tagAttributes:string = this.createAttribute(domNode.attributes);
-    debugger;
     let tagContent:string = '';
     if (domNode.content && domNode.content.length > 0) {
       tagContent = domNode.content.map((contentNode) => this.createTemplate(contentNode)).join('\n')
